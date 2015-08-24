@@ -17,7 +17,9 @@ try:
     # e.g. ['django==1.5.1', 'mezzanine==1.4.6']
     requirements = [str(ir.req) for ir in install_reqs]
 except InstallationError:
-    requirements = []
+    requirements = [
+		'jinja2',
+		'pymysql',]
 
 
 try:
@@ -54,8 +56,7 @@ with open('README.rst') as readme_file:
 
 ENTRY_POINTS = {
     'console_scripts': [
-        'bbw = basic-blog-web.cli:main',
-
+        'bbw=basicblogweb.cli:main',
     ]
 }
 CLASSIFIERS = [
@@ -65,8 +66,11 @@ CLASSIFIERS = [
     'Natural Language :: English',
     'Operating System :: Microsoft :: Windows :: Windows 7',
     "Programming Language :: Python :: 2",
-    'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
+	'Programming Language :: Python :: 3',
+	'Programming Language :: Python :: 3.3',
+	'Programming Language :: Python :: 3.4',
+	'Programming Language :: Python :: 3.5',
     'Topic :: Utilities',
 ]
 
@@ -79,9 +83,6 @@ setup(
     author_email='milo_pin@hotmail.com',
     url='git@github.com:milojing/basic-blog-web.git',
     packages=find_packages(),
-    package_dir={'basic-blog-web':
-                 'basic-blog-web'},
-    include_package_data=True,
     install_requires=requirements,
     license="Proprietary",
     zip_safe=False,

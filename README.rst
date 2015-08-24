@@ -26,7 +26,7 @@ or(use install, you need to do this every time when you change the code)::
 
 Launch basic-blog-web
 ~~~~~~~~~~~~~~~~~~~~~
-Launch basic-blog-web directly with command::
+Launch basicblogweb directly with command::
 
     bbw
 
@@ -46,11 +46,11 @@ Create Coverage Report
 
 To get a detailed test report::
 
-    py.test tests --cov=basic-blog-web
+    py.test tests --cov=basicblogweb
 
 Create html report::
 
-    py.test tests --cov=basic-blog-web --cov-report=html
+    py.test tests --cov=basicblogweb --cov-report=html
 
 Run standardize testing with tox
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
