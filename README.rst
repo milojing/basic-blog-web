@@ -19,7 +19,7 @@ Development
 
     python setup.py develop
 
-or(use install, you need to do this every time when you change the code)::
+   or(use install, you need to do this every time when you change the code)::
 
     python setup.py install
 

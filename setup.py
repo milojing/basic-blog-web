@@ -75,18 +75,18 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='basic-blog-web',
+    name='basicblogweb',
     version='0.1.0',
     description="Python project of Milo",
     long_description=readme,
     author="Milo",
     author_email='milo_pin@hotmail.com',
     url='git@github.com:milojing/basic-blog-web.git',
-    packages=find_packages(),
+    packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     install_requires=requirements,
     license="Proprietary",
     zip_safe=False,
-    keywords='basic-blog-web',
+    keywords='basicblogweb',
     classifiers=CLASSIFIERS,
     entry_points=ENTRY_POINTS,
     test_suite='tests',
