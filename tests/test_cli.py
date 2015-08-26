@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from basic-blog-web.cli import main
+from basicblogweb.cli import main
 
 from click.testing import CliRunner
 

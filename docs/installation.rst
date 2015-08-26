@@ -4,9 +4,9 @@ Installation
 
 At the command line::
 
-    $ easy_install basic-blog-web
+    $ easy_install basicblogweb
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv basic-blog-web
-    $ pip install basic-blog-web
+    $ mkvirtualenv basicblogweb
+    $ pip install basicblogweb
